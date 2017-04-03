@@ -10,14 +10,17 @@
 	<style>
 	 body {
 	     width: 99%;
-	     background: url(static/images/bg.jpg) center top repeat fixed;
+	     
 	 }
 
+.logo {
+margin-top: 0%;
+}
 	 .site-name {
 	     font-size: 300%;
 	     font-weight: bold;
 	     text-align: center;
-	     margin-top: 10%;
+	     margin-top: -13%;
 	     text-shadow: #ee3333 -20px 0px 8px, #33ee33 20px 0px 5px;
 	 }
 
@@ -70,19 +73,89 @@
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
 }
+
+nav {
+   bottom: -75%;
+   left: -15em;
+   position: fixed;
+   display: inner-block;
+   height: 80%;
+   overflow: hidden;
+   background: rgba(255,255,255,0.8);
+   z-index: 100;
+   border: 1px solid gold;
+   border-radius: 35px;
+   -moz-border-radius: 35px;
+   -webkit-border-radius: 35px;
+   box-shadow: 0 0 50px gold;
+   -moz-box-shadow: 0 0 50px gold;
+   -webkit-box-shadow: 0 0 50px gold;
+ }
+ nav:hover {
+   bottom: -1em;
+   left: -1em;
+   background: rgba(255,255,255,0.5);
+   overflow: scroll;    
+   border-radius: 5px;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+ }
+ nav li {
+   padding: 5px 0;
+   margin-left: -10px;
+   list-style: none;
+   border-left: 5px solid gold;
+ }
+ nav li:hover {
+   border-left: 5px solid black;
+   background: rgba(255,255,255,1);
+ }
+ nav li a {
+   text-decoration: none;
+color: black;
+ }
+ nav li li {
+   background: rgba(255,255,255,0.5);
+   padding: 5px 5px;
+   list-style: none;
+   border-left: 2px solid orange;
+   border-bottom: 1px solid #dcdcdc;
+ }
+ nav li li:hover {
+   background: rgba(0,255,255,0.5);
+   color: brown;
+ }
+
 	</style>    
     </head>
     
     <body>
+<header class="site-header">
+  <nav>
+    <ul>
+      <li><a href="/">首页</a></li>
+      <li><a href="/分类列表/">按分类查看</a></li>
+      <li><a href="/话题列表/">按话题查看</a></li>
+      <li><a href="/友情链接/">友情链接</a></li>
+      <li><a href="/关于我/">关于我</a></li>
+      <li><a href="/en/">English 英文版</a></li>
+    </ul>
+  </nav>
+  
+</header> 
 
+<div class="index-show">
+<p class="logo"><img src="static/images/bg.jpg"></p>
 	<p class="site-name">小兵张嘎</p>
-	<p class="slogan">白洋淀的少年在长大</p>
+	<p class="slogan">积极、向上、有为</p>
 
 <div class="index-maxim"><p>我们是时代的弄潮儿，</p>
 <p>我们是成长在白洋淀旁的少年，</p>
 <p>我们不畏惧险恶的市场大潮，</p>
 <p>充满对新时代的向往，</p>
 <p>我们坚强、智慧、勇敢。</p>
+</div>
+
 </div>
 
 <h2>白洋淀的历史：新时代的英雄</h2>
@@ -97,6 +170,7 @@
 <li><a href="/zh/xiongan/">千年巨变：雄安新区</a></li>
 <li><a href="/zh/gongrong/">我们是与国共荣的勇敢小兵！</a></li>
 </ul>
+
 
 <script>
 var _hmt = _hmt || [];
