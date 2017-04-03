@@ -1446,4 +1446,25 @@ footer .rss-img {
 .highlight .vi { color: #008080 } /* Name.Variable.Instance */
 .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
 
- 
+/* 补充 */ 
+
+.title-img {
+  width: 100%;
+  height: 500px;
+padding: 0px;
+margin-bottom: 40px;
+border-shadow: 0;
+}
+.title-img img {
+width: 100%;
+height: auto;
+max-width: 100%;
+max-height: 100%;
+
+    -webkit-filter: blur(1px); /* Chrome, Opera */
+       -moz-filter: blur(1px);
+        -ms-filter: blur(1px);    
+            filter: blur(1px);
+
+filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=1, MakeShadow=false); /* IE6~IE9 */
+}
